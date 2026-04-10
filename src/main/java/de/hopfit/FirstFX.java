@@ -1,10 +1,13 @@
 package de.hopfit;
 
-//import com.developer.exit.ExitApplication;
-//import com.developer.util.css.AddCSS;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -23,18 +26,9 @@ public class FirstFX extends Application {
 
         stage = primaryStage;
         stage.setTitle(title);
-
-//        stage.setOnCloseRequest(e -> {
-//            e.consume();
-//            ExitApplication ep = new ExitApplication();
-//            ep.closeProgram(stage);
-//        });
-
-        //The part that I can't get to work
+        
         root = FXMLLoader.load(getClass().getResource("/de/hopfit/first.fxml"));
-
         scene = new Scene(root);
-      //  addcss.setStylesheet(scene);
         stage.setScene(scene);
         stage.show();
     }
@@ -43,6 +37,7 @@ public class FirstFX extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+    	System.out.println("main.........");
         launch(args);
     }
 }
