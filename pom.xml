@@ -44,13 +44,10 @@
         <artifactId>javafx-maven-plugin</artifactId>
         <version>${javafx.maven.plugin.version}</version>
         <configuration>
-        <!--
 		  <options>
 		    <option>-Djava.library.path=C:\tmp</option>
-		  </options> 
-		 
-          <executable>/usr/lib/jvm/java-21-openjdk-amd64/bin/java</executable>
-           -->   
+		  </options>
+          <executable>/usr/lib/jvm/java-21-openjdk-amd64/bin/java</executable>      
           <mainClass>de.hopfit.HelloFX</mainClass>
         </configuration>
       </plugin>
